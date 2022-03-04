@@ -1,6 +1,8 @@
 body {
   background-color: #20222f;
   font-family: "Inter", sans-serif;
+  margin: auto;
+  padding: 150px;
 }
 
 .dashboard {
@@ -8,11 +10,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
   min-height: 60px;
+  align-items: center;
 }
 
 h1 {
   color: white;
-  font-size: 40px;
 }
 
 h2 {
@@ -42,9 +44,16 @@ h2 {
   padding: 32px;
 }
 
+img {
+  padding: 5px;
+}
+
 .handle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: hsla(0, 0%, 100%, 0.5);
-  padding: 8px;
+  padding: 10px;
 }
 
 .count {
@@ -92,18 +101,37 @@ h2 {
   background-color: #252b42;
   border-radius: 8px;
   padding: 32px;
-  justify-content: space-between;
 }
 
 .views-heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  align-items: center;
+  padding: 20px;
   color: hsla(0, 0%, 100%, 0.5);
 }
 
 .count-2 {
   color: white;
   font-size: 30px;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+@media (max-width: 700px) {
+  .today {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-row {
+    display: flex;
+    flex-direction: column;
+  }
 }
