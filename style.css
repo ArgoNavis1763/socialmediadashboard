@@ -1,0 +1,109 @@
+body {
+  background-color: #20222f;
+  font-family: "Inter", sans-serif;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+}
+
+h2 {
+  color: hsl(228, 34%, 66%);
+}
+
+.toggle {
+  min-height: 60px;
+  justify-content: center;
+}
+
+.top-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.top-row > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  background-color: #252b42;
+  border-radius: 8px;
+  align-items: center;
+  padding: 32px;
+}
+
+.handle {
+  color: hsla(0, 0%, 100%, 0.5);
+  padding: 8px;
+}
+
+.count {
+  color: white;
+  font-size: 50px;
+  padding: 8px;
+}
+
+.daily-count-green {
+  color: hsl(163, 72%, 41%);
+}
+
+.daily-count-red {
+  color: hsl(356, 69%, 56%);
+}
+
+.facebook {
+  border-top: 5px solid #178ff5;
+}
+
+.twitter {
+  border-top: 5px solid #1da1f2;
+}
+
+.insta {
+  border-top: 5px solid #df4896;
+}
+
+.youtube {
+  border-top: 5px solid #c4032b;
+}
+
+.followers {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.today {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2;
+  gap: 30px;
+}
+
+.today-stats {
+  background-color: #252b42;
+  border-radius: 8px;
+  padding: 32px;
+  justify-content: space-between;
+}
+
+.views-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.count-2 {
+  color: white;
+  font-size: 30px;
+}
