@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  color: hsl(228, 34%, 66%);
+  color: hsla(0, 0%, 100%, 0.5);
 }
 
 .toggle {
@@ -43,10 +43,6 @@ h2 {
   padding: 32px;
 }
 
-img {
-  padding: 5px;
-}
-
 .handle {
   display: flex;
   flex-direction: row;
@@ -61,11 +57,11 @@ img {
   padding: 8px;
 }
 
-.daily-count-green {
+.green {
   color: hsl(163, 72%, 41%);
 }
 
-.daily-count-red {
+.red {
   color: hsl(356, 69%, 56%);
 }
 
@@ -83,10 +79,6 @@ img {
 
 .youtube {
   border-top: 5px solid #c4032b;
-}
-
-.followers {
-  color: hsla(0, 0%, 100%, 0.5);
 }
 
 .today {
@@ -127,12 +119,14 @@ img {
 @media (max-width: 700px) {
   .today {
     display: grid;
-    grid-template-columns: 1, span 4;
+    grid-template-columns: span 4;
+    min-height: auto;
     margin: 25px;
   }
   .top-row {
     display: grid;
-    grid-template-columns: 1, span 4;
+    grid-template-columns: span 4;
+    min-height: auto;
     margin: 25px;
   }
 }
