@@ -1,8 +1,7 @@
 body {
   background-color: #20222f;
   font-family: "Inter", sans-serif;
-  margin: auto;
-  padding: 150px;
+  margin: 150px;
 }
 
 .dashboard {
@@ -127,11 +126,13 @@ img {
 
 @media (max-width: 700px) {
   .today {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1, span 4;
+    margin: 25px;
   }
   .top-row {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1, span 4;
+    margin: 25px;
   }
 }
